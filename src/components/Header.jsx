@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Container from "../components/Container"
 import Flex from "../components/Flex"
-import Logo from "../assets/mondria.png"
-import ScrollspyNav from "react-scrollspy-nav";
+import Logo from "../assets/Akhi.png"
+
 import { Link } from 'react-router-dom';
 import { FaBars } from "react-icons/fa";
 import { GiTireIronCross } from "react-icons/gi";
@@ -10,10 +10,10 @@ import { GiTireIronCross } from "react-icons/gi";
 const Header = () => {
 
 
-    let [show, setShow] = useState (()=>{
+    let [show, setShow] = useState(() => {
 
     })
-    let [showHome, steShowhome] = useState (()=>{
+    let [showHome, steShowhome] = useState(() => {
 
     })
 
@@ -23,40 +23,36 @@ const Header = () => {
                 <Container className=" py-6 px-10 rounded-full border-2 border-[#000] " >
                     <Flex className=" justify-center items-center">
                         <div className="w-[20%]">
-                           <div className="">
-                             <img className='mx-3' src={Logo} alt="" />
-                            
-                           </div>
+                            <div className="">
+                                <img className='mx-3' src={Logo} alt="" />
+
+                            </div>
                         </div>
                         <div className="w-[75%] ">
-                           
-                          
-
-                      
-
-                                <ul className={` lg:flex justify-end z-50  text-center lg:gap-8  absolute lg:static duration-700 ease-in-out ${show == true ? " bg-slate-300 w-full top-[60px] left-0  " : "  w-full top-[-300px] left-[0px] " }`}>
-                                    <li className=' relative my-[20px] lg:my-0 font-serif font-semibold text-[16px] duration-300 ease-in-out  hover:text-[#3BB9FF] after:absolute after:contain-[""] after:bottom-[-5px]  lg:after:left-[-3px] after:left-0 after:h-[5px] after:w-[0] after:bg-[#3BB9FF] after:duration-300 after:ease-in-out lg:after:hover:w-[55px] after:hover:w-full before:absolute before:contain-[""] before:top-[-4px] lg:before:right-[-5px] before:right-0 before:h-[5px] before:w-[0] before:bg-[#3BB9FF] before:duration-300 before:ease-in-out lg:before:hover:w-[55px] before:hover:w-full'><Link to="/">Home</Link></li>
-                                    <li className=' relative my-[20px] lg:my-0 font-serif font-semibold text-[16px] duration-300 ease-in-out  hover:text-[#3BB9FF] after:absolute after:contain-[""] after:bottom-[-5px]  lg:after:left-[-3px] after:left-0 after:h-[5px] after:w-[0] after:bg-[#3BB9FF] after:duration-300 after:ease-in-out lg:after:hover:w-[55px] after:hover:w-full before:absolute before:contain-[""] before:top-[-4px] lg:before:right-[-5px] before:right-0 before:h-[5px] before:w-[0] before:bg-[#3BB9FF] before:duration-300 before:ease-in-out lg:before:hover:w-[55px] before:hover:w-full'><Link to="/About">
+                            
+                            <ul className={` lg:flex justify-end z-50  text-center lg:gap-8  absolute lg:static duration-700 ease-in-out ${show == true ? " bg-slate-300 w-full top-[60px] left-0  " : "  w-full top-[-300px] left-[0px] "}`}>
+                                <li className=' relative my-[20px] lg:my-0 font-serif font-semibold text-[16px] duration-300 ease-in-out  hover:text-[#3BB9FF] after:absolute after:contain-[""] after:bottom-[-5px]  lg:after:left-[-3px] after:left-0 after:h-[5px] after:w-[0] after:bg-[#3BB9FF] after:duration-300 after:ease-in-out lg:after:hover:w-[55px] after:hover:w-full before:absolute before:contain-[""] before:top-[-4px] lg:before:right-[-5px] before:right-0 before:h-[5px] before:w-[0] before:bg-[#3BB9FF] before:duration-300 before:ease-in-out lg:before:hover:w-[55px] before:hover:w-full'><Link to="/">Home</Link></li>
+                                <li className=' relative my-[20px] lg:my-0 font-serif font-semibold text-[16px] duration-300 ease-in-out  hover:text-[#3BB9FF] after:absolute after:contain-[""] after:bottom-[-5px]  lg:after:left-[-3px] after:left-0 after:h-[5px] after:w-[0] after:bg-[#3BB9FF] after:duration-300 after:ease-in-out lg:after:hover:w-[55px] after:hover:w-full before:absolute before:contain-[""] before:top-[-4px] lg:before:right-[-5px] before:right-0 before:h-[5px] before:w-[0] before:bg-[#3BB9FF] before:duration-300 before:ease-in-out lg:before:hover:w-[55px] before:hover:w-full'><Link to="/About">
                                     About</Link></li>
-                                    
-                                    <li className=' relative my-[20px] lg:my-0 font-serif font-semibold text-[16px] duration-300 ease-in-out  hover:text-[#3BB9FF] after:absolute after:contain-[""] after:bottom-[-5px]  lg:after:left-[-3px] after:left-0 after:h-[5px] after:w-[0] after:bg-[#3BB9FF] after:duration-300 after:ease-in-out lg:after:hover:w-[75px] after:hover:w-full before:absolute before:contain-[""] before:top-[-4px] lg:before:right-[-5px] before:right-0 before:h-[5px] before:w-[0] before:bg-[#3BB9FF] before:duration-300 before:ease-in-out lg:before:hover:w-[75px] before:hover:w-full'>
-                                        <Link to="/Portfolio">Portfolio</Link>
-                                        </li>
-                                    <li className=' relative my-[20px] lg:my-0 font-serif font-semibold text-[16px] duration-300 ease-in-out  hover:text-[#3BB9FF] after:absolute after:contain-[""] after:bottom-[-5px]  lg:after:left-[-3px] after:left-0 after:h-[5px] after:w-[0] after:bg-[#3BB9FF] after:duration-300 after:ease-in-out lg:after:hover:w-[75px] after:hover:w-full before:absolute before:contain-[""] before:top-[-4px] lg:before:right-[-5px] before:right-0 before:h-[5px] before:w-[0] before:bg-[#3BB9FF] before:duration-300 before:ease-in-out lg:before:hover:w-[75px] before:hover:w-full'>
-                                        <Link to="/Contacts">Contacts</Link>
-                                    </li>
-                                    <li className=' relative my-[20px] lg:my-0 font-serif font-semibold text-[16px] duration-300 ease-in-out  hover:text-[#3BB9FF] after:absolute after:contain-[""] after:bottom-[-5px]  lg:after:left-[-3px] after:left-0 after:h-[5px] after:w-[0] after:bg-[#3BB9FF] after:duration-300 after:ease-in-out lg:after:hover:w-[43px] after:hover:w-full before:absolute before:contain-[""] before:top-[-4px] lg:before:right-[-5px] before:right-0 before:h-[5px] before:w-[0] before:bg-[#3BB9FF] before:duration-300 before:ease-in-out lg:before:hover:w-[43px] before:hover:w-full'><a href="#contacts">Blog</a></li>
-                                    
-                                </ul>
-                           
-                               
+
+                                <li className=' relative my-[20px] lg:my-0 font-serif font-semibold text-[16px] duration-300 ease-in-out  hover:text-[#3BB9FF] after:absolute after:contain-[""] after:bottom-[-5px]  lg:after:left-[-3px] after:left-0 after:h-[5px] after:w-[0] after:bg-[#3BB9FF] after:duration-300 after:ease-in-out lg:after:hover:w-[75px] after:hover:w-full before:absolute before:contain-[""] before:top-[-4px] lg:before:right-[-5px] before:right-0 before:h-[5px] before:w-[0] before:bg-[#3BB9FF] before:duration-300 before:ease-in-out lg:before:hover:w-[75px] before:hover:w-full'>
+                                    <Link to="/Portfolio">Portfolio</Link>
+                                </li>
+                                <li className=' relative my-[20px] lg:my-0 font-serif font-semibold text-[16px] duration-300 ease-in-out  hover:text-[#3BB9FF] after:absolute after:contain-[""] after:bottom-[-5px]  lg:after:left-[-3px] after:left-0 after:h-[5px] after:w-[0] after:bg-[#3BB9FF] after:duration-300 after:ease-in-out lg:after:hover:w-[75px] after:hover:w-full before:absolute before:contain-[""] before:top-[-4px] lg:before:right-[-5px] before:right-0 before:h-[5px] before:w-[0] before:bg-[#3BB9FF] before:duration-300 before:ease-in-out lg:before:hover:w-[75px] before:hover:w-full'>
+                                    <Link to="/Contacts">Contacts</Link>
+                                </li>
+                                <li className=' relative my-[20px] lg:my-0 font-serif font-semibold text-[16px] duration-300 ease-in-out  hover:text-[#3BB9FF] after:absolute after:contain-[""] after:bottom-[-5px]  lg:after:left-[-3px] after:left-0 after:h-[5px] after:w-[0] after:bg-[#3BB9FF] after:duration-300 after:ease-in-out lg:after:hover:w-[43px] after:hover:w-full before:absolute before:contain-[""] before:top-[-4px] lg:before:right-[-5px] before:right-0 before:h-[5px] before:w-[0] before:bg-[#3BB9FF] before:duration-300 before:ease-in-out lg:before:hover:w-[43px] before:hover:w-full'><a href="#contacts">Blog</a></li>
+
+                            </ul>
+
+
                         </div>
-                        
-                       
-                        <div className=" lg:hidden cursor-pointer " onClick={()=>setShow(!show)}> 
-                            {show == true ? <GiTireIronCross/> : <FaBars/>}
-                            
-                            
+
+
+                        <div className=" lg:hidden cursor-pointer " onClick={() => setShow(!show)}>
+                            {show == true ? <GiTireIronCross /> : <FaBars />}
+
+
                         </div>
 
 

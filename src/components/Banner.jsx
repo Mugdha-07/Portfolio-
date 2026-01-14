@@ -38,7 +38,7 @@ const Banner = () => {
                 <p className='font-serif lg:text-[22px] font-medium   lg:w-full w-[90%] lg:mt-[20px] ml-[20px] '> I am MUGDHA ROY .Full Stack Developer  focused on crafting clean & user-friendly experiences , i am passionate about building excellent software that improves the loves of those around me. </p>
                 <div className="flex lg:gap-x-10 gap-x-5 pt-[70px] ml-5 ">
                   <a className='py-4 px-4 bg-[#3BB9FF] rounded-full text-[32px] text-[#000] p-[14px]' href="https://www.facebook.com/mugdho.roy.750" target='blank'><FaFacebookSquare /></a>
-                  <a className='py-4 px-4 bg-[#3BB9FF] rounded-full text-[32px] text-[#000] p-[14px]' href="" target='blank'><FaLinkedin /></a>
+                  <a className='py-4 px-4 bg-[#3BB9FF] rounded-full text-[32px] text-[#000] p-[14px]' href="https://www.linkedin.com/feed/" target='blank'><FaLinkedin /></a>
                   <a className='py-4 px-4 bg-[#3BB9FF] rounded-full text-[32px] text-[#000] p-[14px]' href="https://github.com/Mugdha-07" target='blank'><FaGithubSquare /></a>
                   <a className='py-4 px-4 bg-[#3BB9FF] rounded-full text-[32px] text-[#000] p-[14px]' href="" target='blank'><FaTwitter /></a>
 

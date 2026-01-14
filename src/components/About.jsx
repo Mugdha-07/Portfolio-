@@ -42,7 +42,7 @@ const About = () => {
                   </div>
 
                   <div className="py-[20px]">
-                    <h2 className='font-serif font-medium text-[16px] text-[#616D7E]  '>Langages : <span className='text-[#000] font-semibold text-[18px]'>Bangla , English </span></h2>
+                    <h2 className='font-serif font-medium text-[16px] text-[#616D7E]  '>Language : <span className='text-[#000] font-semibold text-[18px]'>Bangla , English </span></h2>
                   </div>
                   <div className="py-[20px]">
                   <h2 className='font-serif font-medium text-[16px] text-[#616D7E]  '>Email : <span className='text-[#000] font-semibold text-[18px]'>mugdharoy444@gmail.com </span></h2>
